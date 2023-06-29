@@ -221,7 +221,10 @@ export default function Home() {
           }}
         >
           <PlusIcon className="w-5 h-5" />
-          New chat
+          New chat - TESTE DE CI/CD 
+        </button>
+        <PlusIcon className="w-5 h-5" />
+          New chat - TESTE DE CI/CD
         </button>
         {/* -- end button new chat -- */}
         {/* -- chats -- */}
