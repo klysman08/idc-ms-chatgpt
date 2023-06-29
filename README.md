@@ -1,3 +1,11 @@
+# Projeto de Chat com Keycloak
+
+Este projeto é uma aplicação de chat que utiliza o Keycloak como provedor de autenticação. Ele consiste em duas partes: o serviço de chat e a aplicação web.
+
+## Instalação
+
+Para instalar o projeto, siga os seguintes passos:
+
 - Construir a imagem docker da aplicação chatservice
 - Aplicar o manifesto do chatservice
 - Aplicar o manifesto do Keycloak 
@@ -5,21 +13,24 @@
 - Construir a imagem docker da aplicação webapp
 - Aplicar o manifesto da aplicação webapp
 
-``` bash
-[Title](name:%2520CI-CD) [Title](on:%2520#%2520Evento%2520que%2520vai%2520disparar%2520o%2520workflow) [Title](../../../..) [Title](jobs:) [Title](<../../../../            klysman08/imersao-chatservice:v${{ github.run_number }} >) [Title](<../../../../            klysman08/imersao-chatservice:latest>) [Title](<../../../../            klysman08/imersao-gpt-webapp:v${{ github.run_number }}>) [Title](<../../../../            klysman08/imersao-gpt-webapp:latest>) [Title](<../../../../      >) [Title](<../../../../          >) [Title](<../../../../          sed -i "s/{{API_TOKEN}}/${{ secrets.OPENAI_API_KEY }}/g" ./k8s/deploy-chatservice.yaml>) [Title](<../../../../      >) [Title](<../../../../          aws eks update-kubeconfig --name aws-kubernetes-eks --region us-east-1>) [Title](<../../../../        >) [Title](<../../../../            k8s/deploy-chatservice.yaml>) [Title](<../../../../            k8s/deploy-webapp.yaml>) [Title](<../../../../            klysman08/imersao-chatservice:v${{ github.run_number }}>) [Title](<../../../../            klysman08/imersao-gpt-webapp:v${{ github.run_number }}>)
-```
+## Uso
 
-**Links úteis**
+Para usar o projeto, siga os seguintes passos:
 
-Link para o DBeaver:
+- Inicie o serviço de chat
+- Inicie a aplicação web
+- Acesse a aplicação web em um navegador
 
-https://dbeaver.io/download/
+## Serviços utilizados
 
-Link para a plataforma da OpenAI:
+Este projeto utiliza os seguintes serviços:
 
-https://platform.openai.com/
+- **GitHub Actions**: para automatizar o processo de build e deploy das aplicações.
+- **Kubernetes**: para orquestrar os containers das aplicações.
+- **AWS**: como provedor de aplicação em nuvem.
 
-Link para o postman:
+## Links úteis
 
-https://www.postman.com/
-
+- [DBeaver](https://dbeaver.io/download/)
+- [Plataforma da OpenAI](https://platform.openai.com/)
+- [Postman](https://www.postman.com/)
