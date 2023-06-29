@@ -48,7 +48,7 @@ spec:
     spec: 
       containers:
         - name: chatservice
-          image: fabricioveronez/imersao-chatservice:v1
+          image: klysman08/imersao-chatservice:v1
           ports:
           - containerPort: 8080
             name: http
@@ -74,7 +74,7 @@ spec:
           - name: GRPC_SERVER_PORT
             value: "50051"     
           - name: INITIAL_CHAT_MESSAGE
-            value: "Seu nome é Jarvis. Você é a inteligência artificial da iniciativa DevOps && Cloud. Você da suporte a programadores e profissionais de infraestrutura."
+            value: "Seu nome é Vivt. Você é a inteligência artificial da iniciativa DevOps && Cloud. Você da suporte a programadores e profissionais de infraestrutura."
           - name: OPENAI_API_KEY
             value: {{API_TOKEN}}
           - name: AUTH_TOKEN
