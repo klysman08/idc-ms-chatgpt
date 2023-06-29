@@ -223,9 +223,6 @@ export default function Home() {
           <PlusIcon className="w-5 h-5" />
           New chat - TESTE DE CI/CD 
         </button>
-        <PlusIcon className="w-5 h-5" />
-          New chat - TESTE DE CI/CD
-        </button>
         {/* -- end button new chat -- */}
         {/* -- chats -- */}
         <div className="flex-grow overflow-y-auto -mr-2 overflow-hidden">
